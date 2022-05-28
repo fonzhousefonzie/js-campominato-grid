@@ -2,6 +2,12 @@
     background-color: var(--bs-highlight-bg);
 }
 
+.grid-container{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+}
+
 .cell{
     border: 1px solid black;
 }
