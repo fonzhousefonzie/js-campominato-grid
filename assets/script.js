@@ -18,12 +18,17 @@ function gridGen(num1, num2){
     }
 }
 
-const difficolta = document.getElementById('difficolta').value;
-
 document.getElementById("genera").addEventListener('click', function(){
-    if (difficolta == '1'){
+
+    while(gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+    }
+
+    const difficolta = document.getElementById('difficolta').value;
+
+    if (difficolta === '1'){
         gridGen(10,10);
-    } else if (difficolta == '2'){
+    } else if (difficolta === '2'){
         gridGen(9, 9);
     } else {
         gridGen(7, 7);
